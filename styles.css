@@ -1,0 +1,159 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Dois", "Lato", sans-serif;
+  font-size: 16px;
+  height:100%;
+  width:100%;
+  margin:0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+blockquote > p {
+
+  color: #ffffff;
+
+}
+
+ h1 {
+
+   font-weight: 900;
+  line-height: 1.5;
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+body {
+
+ background-color: #191970
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+
+
+form {
+
+  background-color: #ff7e00;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 2rem;
+
+}
+
+
+.form-container {
+
+
+  diplay: inline-block;
+  text-align: left;
+  margin: auto;
+}
+
+.form-inner-container {
+
+display: flex;
+flex-direction: column;
+
+}
+
+
+.form-inner-container > label {
+
+font-weight: bold;
+
+}
+input[type ="text"], input[type="email"], input[type = "number"] , input[type="checkbox"]{
+
+margin: 0.8rem 0;
+padding: 0.8rem 0;
+
+}
+
+
+
+input[type ="radio"] {
+
+  margin: 0.5rem 0;
+}
+
+
+.gender-container > label {
+
+  font-weight: bold;
+  padding: 0.8rem 0;
+
+}
+
+.checkbox-container {
+
+  font-weight: bold;
+
+}
+
+select {
+
+  padding: 0.4rem;
+}
+
+input[type=submit] {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background-color: #191970;
+  color: #ffffff;
+
+}
+
+.button {
+
+  display: flex;
+  justify-content: center;
+}
+
+input::placeholder {
+
+  padding-left: 1rem;
+}
+
+textarea::placeholder {
+
+  padding-left: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+
+textarea{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width:500px){
+
+  .form-container {
+
+    max-width: 500px;
+  }
+}

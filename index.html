@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1 id ="title">As Drunk as a Lord!</h1>
+<blockquote cite ="https://bacchanalian.co.uk/quotes-about-beer/">
+<p id ="description">A fine beer may be judged with only one sip, but it’s better to be thoroughly sure.</P>
+</blockquote>
+
+</header>
+<div class ="form-container">
+  <form id = "survey-form" >
+
+<div  class = "form-inner-container">
+
+     <label id="name-label">First Name</label>
+     <input id ="name" type ="text" placeholder = "First Name" required>
+
+    <label id ="name-label">Last Name</label>
+     <input id ="name" type ="text" placeholder = "Last Name" required>
+
+   <label id ="email-label">Email </label>
+   <input id = "email" type ="email" placeholder = "Username@gmail.com"  maxlength ="30" pattern =".+@gmail\.com" required>
+
+ <label id ="number-label">Age </label>
+   <input id ="number"  type = "number" placeholder = "Age" min ='21' max = "100" maxlength = "4" size = "4" required>
+</div><!--end of form-inner-container-->
+   <br><br>
+
+
+<div class ="gender-container">
+
+  <p>Gender:</p>
+
+   <input id ="female" type ="radio" name ="gender" value ="f">
+<label for ="female">Female</label>
+<br>
+
+   <input id="male" type = "radio" name ="gender" value ="m">
+<label for ="male">Male</label>
+
+</div>
+
+    <br><br>
+
+   <p>What's your preferred type of beer?</p>
+
+  <select name = "beer" id ="dropdown">
+    <option value ="">None</option>
+    <option value ="IPA">IPA</option>
+    <option value ="Pale ale">Pale ale</option>
+    <option value ="Pilsner">Pilsner</option>
+    <option value ="Stout">Stout</option>
+    <option value = "Porter">Porter</option>
+    <option value = "Wheat">Wheat</option>
+    <option value = "Sour">Sour</option>
+  </select>
+
+  <br><br>
+
+  <div class ="checkbox-container">
+ <p>What's your preferred drinking spot?</p>
+
+  <input type="checkbox" name="home" value="home">
+  <label for="home">Home</label>
+ <br>
+
+   <input type="checkbox" name="bar" value="bar">
+   <label for="bar">Bar</label>
+<br>
+
+    <input type="checkbox" name="restaurant" value="restaurant">
+    <label for="restaurant">Resturant</label>
+
+
+<br>
+
+<input type="checkbox" name="other" value="other">
+<label for="other">Other</label>
+  </div>
+<br><br>
+
+
+
+     <textarea id="comment" name="comment" placeholder="Comment:" rows="10" cols="52"></textarea>
+
+<br><br>
+
+<div class ="button">
+<input  id ="submit" type="submit">
+
+</div>
+  </form>
+
+</div><!--end of form-container-->
+<script type="text/javascript" src ="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
